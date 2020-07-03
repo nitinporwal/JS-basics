@@ -3,7 +3,7 @@
 /**************************
  * Variables and data types
  **************************/
-
+/*
 let firstName = 'John'; // You can also use double quotes for string like "John" but using single quotes is a bit modern
 console.log(firstName);
 
@@ -21,7 +21,7 @@ console.log(job);
 
 let noData = null; // null data type
 console.log(noData);
-
+*/
 // Rules for naming variables:
 
 /*
@@ -39,7 +39,7 @@ let if = 'else' // can't use reserved js keywords as variable names
 /******************************
  * Mutation and Type Coercion
  *******************************/
-
+/*
  let firstName = 'John';
  let age = 32;
 
@@ -62,3 +62,34 @@ alert(firstName + ' is a ' + age + ' year old ' + job + '. ' + marry + ' Is he m
 
 let lastName = prompt('What is your last name?'); // Prompting user to type last name
 console.log(firstName + ' ' + lastName);
+*/
+
+
+/******************************
+ * Basic Operators in js
+ *******************************/
+
+ let currentYear, dobJohn, dobMike, ageJohn, ageMike;
+ currentYear = 2020;
+ ageJohn = 32;
+ ageMike = 28;
+
+ // Math operators -> binary operators
+ dobJohn = currentYear - 32;
+ dobMike = currentYear - 28;
+
+ console.log(dobJohn); // -> 1988
+ console.log(dobMike); // -> 1992
+ console.log(currentYear * 2); // -> 4040
+ console.log(currentYear / 5); // -> 404
+
+ // Logical operators -> binary operators
+ let johnOlder = ageJohn > ageMike;
+ console.log(johnOlder); // -> true
+
+ // typeof operator -> unary operator
+ console.log(typeof johnOlder); // -> boolean
+ console.log(typeof ageMike); // number
+ console.log(typeof 'Hello Mike'); // -> string
+ let x;
+ console.log(typeof x); // -> undefined
